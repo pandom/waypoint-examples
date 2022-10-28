@@ -16,6 +16,15 @@ app "dynamic-go" {
         key  = "password"
       })
     }
+
+    runner {
+      env = {
+        test = dynamic("vault", {
+          paath = "secret/data/test"
+          key  = "paladin"
+        })
+      }
+    }
   }
 
   build {
