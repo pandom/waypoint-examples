@@ -19,7 +19,7 @@ app "dynamic-go" {
 
     runner {
       env = {
-        test = dynamic("vault", {
+        "DYNAMIC_RUNNER_CONFIG_TEST" = dynamic("vault", {
           paath = "secret/data/test"
           key  = "paladin"
         })
