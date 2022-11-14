@@ -41,7 +41,9 @@ pipeline "full-up" {
 }
 
 app "nomad-nodejs-web" {
-
+  runner {
+    prfile = "nomad-01GHSTM8M4YG3KDZPW5VQFJNH7"
+  }
   build {
     use "pack" {}
     registry {
