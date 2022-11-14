@@ -19,6 +19,8 @@ app "nomad-nodejs-web" {
       // show they are configurable
       datacenter = "dc1"
       namespace  = "default"
+      service_provider = "nomad"
+
     }
   }
 
